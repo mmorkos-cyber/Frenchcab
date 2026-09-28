@@ -1,11 +1,11 @@
 const express = require("express");
 
 const router = express.Router();
-const testControllers = require("../controllers/testController");
+const testControllers = require("../controllers/testControllers");
 
 
 
-router.get("/", testControllers.getTest);
+router.get("/", testControllers.getPlants);
 
 
 module.exports = router;
