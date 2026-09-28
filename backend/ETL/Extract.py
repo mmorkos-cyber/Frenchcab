@@ -1,6 +1,5 @@
 import os 
 import pandas as pd
-import sqlite3
 
 root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 dossier_data = os.path.join(root, "raw_data")
