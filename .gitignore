@@ -28,3 +28,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /raw_data
+
+gateway/node_modules
+gateway/.env
