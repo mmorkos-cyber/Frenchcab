@@ -1,7 +1,6 @@
 # Contexte
 Ce fichier vise à définir les rêgle de contribution collaboratives dans le cadre du projet "Frenchcab".
 
-# Rêgles
 
 ## Branches
 

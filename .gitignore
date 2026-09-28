@@ -29,5 +29,7 @@ yarn-error.log*
 
 /raw_data
 
+backend/ETL/__pychache__
+
 gateway/node_modules
 gateway/.env
