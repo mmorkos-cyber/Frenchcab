@@ -30,7 +30,7 @@
                   <th>Heure d'arrivée</th>
                   <th>Durée de la course</th>
               </tr>
-              @for (element of coursesAffichees){
+              @for (element of coursesAffichees(); track element.id){
               <tr>
                   <td>{{element.localisation_d}}</td>
                   <td>{{element.localisation_a}}</td>
