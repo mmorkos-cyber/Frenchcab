@@ -53,7 +53,9 @@ def initialiser_bdd():
                     congestion_surcharge REAL,
                     Airport_fee REAL,
                     cbd_congestion_fee REAL,
-                    trip_duration_min REAL
+                    trip_duration_min REAL,
+                    pickup_hour INT,
+                    pickup_weekday INT
                 );
                 """)
     
