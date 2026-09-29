@@ -19,3 +19,5 @@ ssh -i ~/Downloads/myKey.pem groupe2@{numéro api dans VM-linux.txt}
 Il existe 4 utilisateurs crées (`utilisateur1`, `utilisateur2`, `utilisateur3`, `utilisateur4`). Chacun a un mot de passe qui se trouve dans le fichier text `VM-linux.txt`.
 
 ### 3. Docker
+
+Créer les images docker
