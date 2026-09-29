@@ -27,3 +27,17 @@ node_modules/
 # Docker
 Dockerfile*
 docker-compose*.yml
+
+# Frontend
+ 
+node_modules
+dist
+.angular
+coverage
+reports
+
+.git
+.gitignore
+
+*.log
+npm-debug.log*
