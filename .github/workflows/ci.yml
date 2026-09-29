@@ -4,7 +4,7 @@ run-name: docker-build
 on:
   push:
     branches:
-      - stanging
+      - staging
 
 jobs:
   test-runner:
