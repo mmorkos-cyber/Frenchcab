@@ -53,8 +53,8 @@ try:
             "date_invalide": df["tpep_pickup_datetime"].isna() | df["tpep_dropoff_datetime"].isna(),
             "hors_periode": hors_periode,
             "duree_negative_ou_nulle": df["trip_duration_min"] <= 0,
-            "duree_sup_3h": df["trip_duration_min"] > 180,
-            "distance_nulle_ou_aberrante": (df["trip_distance"] <= 0) | (df["trip_distance"] > 200),
+            "duree_sup_5h": df["trip_duration_min"] > 300,
+            "distance_nulle_ou_aberrante": (df["trip_distance"] <= 0) | (df["trip_distance"] > 300),
             "montant_negatif_ou_nul": (df["fare_amount"] <= 0) | (df["total_amount"] <= 0),
             "montant_aberrant": df["total_amount"] > 1000,
         }
@@ -71,7 +71,8 @@ try:
         df = filter(df, year, month)
 
         return df.reset_index(drop=True)
-        
+
+    df = transform(parquet_df, year, month)
 except FileNotFoundError:
     print("File not found:", parquet_df)
 except Exception as e:
