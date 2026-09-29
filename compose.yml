@@ -15,8 +15,8 @@ services:
   gateway:
     image: lolaedoc/frenchcab:gateway
 
-    # env_file:
-    #   - name=value
+    env_file:
+      - name=value
     
     ports:
       - "3000:3000"
