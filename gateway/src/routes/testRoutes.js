@@ -5,7 +5,7 @@ const testControllers = require("../controllers/testControllers");
 
 
 
-router.get("/", testControllers.getPlants);
+router.get("/", testControllers.getTest);
 
 
 module.exports = router;

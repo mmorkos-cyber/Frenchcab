@@ -1,12 +1,12 @@
 const testService = require("../services/testService.js");
 
-async function getPlants(req,res){
+async function getTest(req,res){
 
     console.log("Récupération des centrales");
 
     try{
 
-        const plants = await testService.getPlants();
+        const plants = await testService.getTests();
 
         console.log("test récupérée");
 
@@ -29,4 +29,4 @@ async function getPlants(req,res){
     }
 }
 
-module.exports = {getPlants};
+module.exports = {getTest};

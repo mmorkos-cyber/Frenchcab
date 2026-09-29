@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 
-async function getTest() {
+async function getTests() {
 
     console.log("URL Python :", process.env.BACKEND_URL);
 
@@ -25,4 +25,4 @@ async function getTest() {
 
 }
 
-module.exports = {getTest};
+module.exports = {getTests};
